@@ -51,3 +51,8 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+a:focus-visible,
+button:focus-visible {
+  outline: none;
+}
