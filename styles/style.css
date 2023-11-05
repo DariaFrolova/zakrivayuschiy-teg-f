@@ -20,7 +20,6 @@
   min-block-size: 100dvb;
   background-color: var(--background-color);
   background-image: var(--background-gradient);
-  background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   background-size: 300% 960px;
@@ -181,12 +180,6 @@
   border-top: 2px solid var(--text-color);
 }
 
-.content__paragraph-first,
-.content__paragraph-second {
-  --main-font-weight: 400;
-  width: 646px;
-}
-
 @supports (-webkit-text-stroke: 0.6px var(--background-color)) {
   .card__image-label {
     -webkit-text-stroke: 0.6px var(--background-color);
@@ -196,10 +189,12 @@
 
 .content__paragraph-first,
 .content__paragraph-second {
+  --main-font-weight: 400;
   font-family: var(--primary-font);
   font-size: var(--font-size-paragraph);
   color: var(--text-color);
   margin: 0 auto;
+  width: 646px;
 }
 
 .content__paragraph-first {
@@ -228,7 +223,6 @@
 
 .card__icon-button {
   z-index: 1;
-  background-color: transparent;
   border: none;
   cursor: pointer;
   background-color: var(--background-color);
@@ -280,8 +274,8 @@
   content: "";
   width: 100%;
   height: 100%;
-  translate: -100%;
-  transition: translate 0.5s ease-in-out;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
   background-color: var(--text-color);
   z-index: 1;
   top: 0;
@@ -289,7 +283,7 @@
 }
 
 .card__like-button:hover::before {
-  translate: 0%;
+  transform: translateX(0%);
 }
 
 .card__like-button:focus-visible {
