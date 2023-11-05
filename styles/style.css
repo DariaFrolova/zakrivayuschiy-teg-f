@@ -31,24 +31,18 @@
 
 .header {
   position: relative;
-
   background-color: var(--background-color);
   border: 2px solid var(--text-color);
-
   font-family: var(--accent-font);
   font-weight: var(--font-weight-normal);
   color: var(--text-color);
-
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
   text-align: center;
   text-transform: uppercase;
-
   width: clamp(23.1875rem, 16.138rem + 30.4022vw, 43.5rem);
   padding-top: 102px;
-
   margin: 102px 0;
 }
 
@@ -140,6 +134,8 @@
 
 .content__block {
   background-color: var(--background-color);
+  margin: 0 auto;
+  border: 2px solid var(--text-color);
 }
 
 .content__title {
@@ -202,11 +198,6 @@
   padding-bottom: 27px;
 }
 
-.content__block {
-  margin: 0 auto;
-  border: 2px solid var(--text-color);
-}
-
 .card__button-container {
   display: flex;
   justify-content: flex-end;
@@ -254,12 +245,10 @@
 
 .card__like-button {
   position: relative;
-
   border: 2px solid var(--text-color);
   font-family: var(--accent-font);
   font-size: var(--font-size-small);
   background: var(--background-color);
-
   cursor: pointer;
   transition: translate 0.3s ease;
   overflow: hidden;
