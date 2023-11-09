@@ -24,7 +24,7 @@
   background-color: var(--background-color);
   background-image: var(--background-gradient);
   background-repeat: no-repeat;
-  min-width: 371px;
+  min-width: 320px;
   max-width: 696px;
   width: 100%;
   background-position: center;
@@ -316,7 +316,6 @@
 .button__save {
   width: 335px;
   min-height: 51px;
-  background-color: transparent;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -469,7 +468,8 @@
 
 @media (width <= 375px) {
   .page {
-    background-size: 150%;
+    /* background-size: 150%; */
+    margin: 0 auto;
   }
 
   .dialog__block {
@@ -481,6 +481,6 @@
     flex-direction: column;
     gap: 8px;
     min-height: 80px;
-    width: 306px;
+    max-width: 306px;
   }
 }
