@@ -57,7 +57,6 @@
   padding-bottom: 20px;
   max-width: 455px;
   width: 100%;
-  
 }
 
 .header__link {
@@ -219,7 +218,7 @@
   padding-bottom: 27px;
   margin: 0 auto;
   max-width: 646px;
-  width: 100%
+  width: 100%;
 }
 
 .card__button-container {
@@ -411,7 +410,6 @@
   text-transform: uppercase;
   max-width: 234px;
   width: 100%;
-  width:100%;
   line-height: 150%;
 }
 
@@ -484,13 +482,12 @@
 
 @media (width <= 375px) {
   .page {
-    margin: 0 auto;
+   margin: 0 auto;
   }
 
   .dialog__block {
     margin-bottom: 102px;
   }
-
 
   .button__save {
     display: flex;
@@ -500,3 +497,4 @@
     max-width: 306px;
   }
 }
+
