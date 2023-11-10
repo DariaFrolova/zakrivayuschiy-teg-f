@@ -326,7 +326,8 @@
 }
 
 .button__save {
-  width: 335px;
+  max-width: 335px;
+  width: 100%;
   min-height: 51px;
   display: flex;
   flex-direction: row;
@@ -494,7 +495,8 @@
     flex-direction: column;
     gap: 8px;
     min-height: 80px;
-    max-width: 306px;
+    max-width: 306px !important;
+    width: 100%;
   }
 }
 
