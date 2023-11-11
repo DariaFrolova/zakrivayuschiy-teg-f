@@ -51,7 +51,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: clamp(3.0625rem, 2.7768rem + 1.4286vw, 4.0625rem);
+  font-size: clamp(3.0625rem, 2.7993rem + 1.4035vw, 4.0625rem);
   padding-bottom: 20px;
   max-width: 455px;
   width: 100%;
@@ -420,7 +420,8 @@
   filter: hue-rotate(-80deg);
 }
 
-@media (width <= 375px) {
+  @media (max-width: 375px) {
+
   .page {
     margin: 0 auto;
   }
@@ -440,5 +441,11 @@
   .dialog__block-icon {
     width: 28px;
     height: 28px;
+  }
+}
+
+@media (max-width: 374px) {
+  .header__title {
+    font-size: clamp(2.8125rem, 2.4836rem + 1.7544vw, 4.0625rem);;
   }
 }
