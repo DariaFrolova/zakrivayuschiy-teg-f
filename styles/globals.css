@@ -60,3 +60,5 @@ button:focus-visible {
 a:hover {
   cursor: pointer;
 }
+
+/* * { outline: 1px solid yellow; } */
