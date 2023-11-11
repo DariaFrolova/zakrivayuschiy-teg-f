@@ -63,13 +63,13 @@
 }
 
 .like-icon:hover .main-body {
-  fill: var(--text-color);
-  transition: fill 0.3s linear;
+  fill: var(--core-color);
+  transition: fill 0.3s 0.05s linear;
 }
 
 .like-icon:hover .core {
-  fill: var(--text-color);
-  transition: fill 0.3s linear;
+  fill: var(--core-color);
+  transition: fill 0.3s 0.03s linear;
 }
 
 .like-icon.is-liked .main-body {
@@ -79,7 +79,6 @@
 
 .like-icon.is-liked .core {
   fill: var(--sparks-color);
-
   transition: fill 0.3s linear;
 }
 
@@ -101,8 +100,12 @@
   fill: var(--text-color);
 }
 
-.like-icon:active .main-body,
 .like-icon:active .core {
   fill: var(--sparks-color);
-  transition: fill 0.3s linear;
+  transition: fill 0.3s 0.03s linear;
+}
+
+.like-icon:active .main-body {
+  fill: var(--sparks-color);
+  transition: fill 0.3s 0.05s linear;
 }
